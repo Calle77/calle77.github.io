@@ -125,10 +125,90 @@ body {
   font-size: 0.9rem;
 }
 
+
+/* ===== HEADER MODERNO ===== */
+.hero-header {
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ===== TITOLO PRINCIPALE ===== */
+.site-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #3b82f6, #9333ea, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hueRotate 10s infinite linear;
+  letter-spacing: 1px;
+}
+
+@keyframes hueRotate {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* ===== NAV MENU ===== */
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-item {
+  position: relative;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #60a5fa, #9333ea);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-item:hover {
+  color: #60a5fa;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 640px) {
-  main {
-    min-height: 90vh;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  .site-title {
+    font-size: 2.5rem;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+  .main-nav {
+    gap: 1rem;
   }
 }
+
