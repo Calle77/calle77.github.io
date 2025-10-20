@@ -1,4 +1,13 @@
 /* ===== FONT E COLORI BASE ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; /* vh = viewport height, 100% dell'altezza visibile */
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: radial-gradient(circle at top left, #0f172a, #020617);
