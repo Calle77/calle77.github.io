@@ -8,9 +8,9 @@
 
 /* ========== STRUTTURA GENERALE ========== */
 body {
-    color: #333;
+    color: #fff;
     line-height: 1.6;
-    background: linear-gradient(to bottom right, #f8f9fb, #eaf1ff);
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    background: transparent; /* sfondo identico al body */
     color: white;
     text-align: center;
 }
@@ -76,32 +76,33 @@ section {
 
 /* ========== CHI SONO ========== */
 .about {
-    background: linear-gradient(to bottom right, #eaf1ff, #ffffff);
-    color: #333;
+    background: transparent;
+    color: white;
 }
 
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 25px;
-    color: #3b4cca;
+    color: #ffdfba;
 }
 
 .about p {
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.2rem;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 /* ========== PROGETTI ========== */
 .projects {
-    background: linear-gradient(to bottom right, #ffffff, #f3f8ff);
+    background: transparent;
+    color: white;
 }
 
 .projects h2 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    color: #3b4cca;
+    color: #ffdfba;
 }
 
 .project-cards {
@@ -112,17 +113,18 @@ section {
 }
 
 .card {
-    background: linear-gradient(145deg, #ffffff, #eef4ff);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 25px;
     width: 280px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 
 .card h3 {
@@ -134,10 +136,11 @@ section {
 .card p {
     font-size: 1rem;
     margin-bottom: 15px;
+    opacity: 0.9;
 }
 
 .card a {
-    color: #3b4cca;
+    color: #ffdfba;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -149,12 +152,11 @@ section {
 
 /* ========== FOOTER ========== */
 .footer {
-    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    background: transparent;
     color: white;
     text-align: center;
     padding: 50px 20px;
     font-size: 1.1rem;
-    box-shadow: 0 -8px 25px rgba(0,0,0,0.1);
 }
 
 .footer p {
@@ -197,4 +199,5 @@ section {
         padding: 80px 15px;
     }
 }
+
 
