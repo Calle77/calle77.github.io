@@ -116,3 +116,11 @@ body {
   color: #64748b;
   font-size: 0.9rem;
 }
+
+@media (max-width: 640px) {
+  main {
+    min-height: 90vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
