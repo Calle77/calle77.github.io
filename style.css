@@ -44,7 +44,7 @@ body {
 /* ===== BUTTON ===== */
 .btn-primary {
   background: linear-gradient(90deg, #3b82f6, #9333ea);
-  padding: 1.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   color: white;
   font-weight: 600;
