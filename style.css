@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Ogni sezione è fluida e si fonde con la successiva */
 section {
     padding: 100px 20px;
     text-align: center;
@@ -31,20 +30,19 @@ section {
     background: linear-gradient(135deg, #89f7fe, #66a6ff);
     color: white;
     text-align: center;
-    position: relative;
 }
 
-/* Effetto sfumatura per titolo */
+/* Titolo con gradiente animato */
 .gradient-title {
     font-size: 4rem;
     font-weight: 700;
-    background: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientMove 5s ease infinite;
 }
 
-/* Animazione gradiente titolo */
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -76,7 +74,7 @@ section {
     box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-/* ========== SEZIONE "CHI SONO" ========== */
+/* ========== CHI SONO ========== */
 .about {
     background: linear-gradient(to bottom right, #eaf1ff, #ffffff);
     color: #333;
@@ -95,10 +93,9 @@ section {
     opacity: 0.85;
 }
 
-/* ========== SEZIONE PROGETTI ========== */
+/* ========== PROGETTI ========== */
 .projects {
     background: linear-gradient(to bottom right, #ffffff, #f3f8ff);
-    text-align: center;
 }
 
 .projects h2 {
@@ -200,3 +197,4 @@ section {
         padding: 80px 15px;
     }
 }
+
