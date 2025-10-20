@@ -1,11 +1,19 @@
 /* ===== FONT E COLORI BASE ===== */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh; /* vh = viewport height, 100% dell'altezza visibile */
+  min-height: 60vh; /* vh = viewport height, 100% dell'altezza visibile */
 }
 
 body {
