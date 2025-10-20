@@ -42,7 +42,7 @@ body {
 }
 
 .intro-text {
-  font-size: 1.5rem;           /* più grande del normale ma più piccolo del titolo */
+  font-size: 2.5rem;           /* più grande del normale ma più piccolo del titolo */
   margin-top: 1rem;            /* distanza dal titolo */
   color: #cbd5e1;              /* colore chiaro neutro */
   text-align: center;
@@ -51,15 +51,10 @@ body {
 #typed-text {
   font-weight: 600;             /* più marcato rispetto a "Sono" */
   color: #60a5fa;               /* colore brillante */
-  background: linear-gradient(90deg, #60a5fa, #9333ea, #ec4899); /* gradiente dinamico */
+  /*background: linear-gradient(90deg, #60a5fa, #9333ea, #ec4899); /* gradiente dinamico */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hueShift 8s infinite linear; /* animazione colore */
-}
-
-@keyframes hueShift {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
+  animation: hue 8s infinite linear; /* animazione colore */
 }
 
 /* ===== BUTTON ===== */
