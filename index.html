@@ -10,7 +10,10 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <h1 class="gradient-title">Filippo Callegari</h1>
-        <p id="animated-text"></p>
+        <div class= "fraseDinamica">
+          <p id= "prefix">Sono...</p>
+          <p id="animated-text"></p>
+        </div>
         <a href="https://github.com/Calle77" target="_blank" class="btn">Visita il mio GitHub</a>
     </section>
 
@@ -19,7 +22,6 @@
         <h2>Chi sono</h2>
         <p>
             Ciao! Sono <strong>Filippo Callegari</strong>, uno studente appassionato di informatica e tecnologia. 
-            Mi piace creare progetti e imparare nuove tecnologie.
         </p>
     </section>
 
@@ -53,16 +55,16 @@
     <!-- SCRIPT ANIMAZIONE TESTO -->
     <script>
         const texts = [
-            "Sviluppatore in crescita",
-            "Appassionato di Coding",
-            "Studente di Informatica"
+            "uno sviluppatore in crescita",
+            "un appassionato di coding",
+            "uno studente di Informatica"
         ];
         let i = 0;
         const animatedText = document.getElementById("animated-text");
         setInterval(() => {
             animatedText.textContent = texts[i];
             i = (i + 1) % texts.length;
-        }, 2000);
+        }, 1500);
     </script>
 
 </body>

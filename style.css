@@ -34,13 +34,14 @@ section {
 
 /* Titolo con gradiente animato */
 .gradient-title {
-    font-size: 5rem;
-    font-weight: 800;
-    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f);
-    background-size: 200% 200%;
+    font-family: "Copperplate";
+    font-size: 6rem;
+    font-weight: 6000;
+    background: linear-gradient(270deg, #ff9a9e, #7666b8, #b6aae4, #ff9a9e);
+    background-size: 600% 600%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientMove 3s ease infinite;
+    animation: gradientMove 15s ease infinite;
 }
 
 @keyframes gradientMove {
@@ -50,21 +51,35 @@ section {
 }
 
 #animated-text {
-    font-size: 2rem;
-    margin-top: 20px;
+    font-family: "Papyrus";
+    font-size: 2.5rem;
+    margin-top: 30px;
     opacity: 0.9;
+}
+
+#prefix {
+    font-family: "Papyrus";
+    font-size: 2.5rem;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+.fraseDinamica{
+   display: flex;
 }
 
 /* Bottone GitHub */
 .btn {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 14px 30px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    animation: gradientMove 3s ease infinite;
+    background: linear-gradient(270deg, #ff9a9e, #7666b8, #b6aae4, #ff9a9e);
+    background-size: 600% 600%;
+    animation: gradientMove 10s ease infinite;
     color: white;
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
+    font-family: "Copperplate";
     font-size: 1.1rem;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -82,14 +97,16 @@ section {
 }
 
 .about h2 {
+    font-family: "Papyrus";
     font-size: 2.5rem;
     margin-bottom: 25px;
-    color: #ffdfba;
+    color: #7666b8;
 }
 
 .about p {
     max-width: 700px;
     margin: 0 auto;
+    font-family: "Papyrus";
     font-size: 1.2rem;
     opacity: 0.9;
 }
@@ -102,22 +119,25 @@ section {
 
 .projects h2 {
     font-size: 2.5rem;
+    font-family: "Papyrus";
     margin-bottom: 50px;
-    color: #ffdfba;
+    color: #7666b8;
 }
 
 .project-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 100px;
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 25px;
-    width: 280px;
+    background: linear-gradient(270deg, #ff9a9e, #7666b8, #b6aae4, #ff9a9e);
+    background-size: 600% 600%;
+    animation: gradientMove 15s ease infinite;
+    border-radius: 50px;
+    padding: 40px;
+    width: 300px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -129,8 +149,9 @@ section {
 }
 
 .card h3 {
-    color: #ff7e5f;
+    color: white;
     font-size: 1.5rem;
+    font-family: "Papyrus";
     margin-bottom: 10px;
 }
 
@@ -143,6 +164,7 @@ section {
 .card a {
     color: #ffdfba;
     text-decoration: none;
+    font-family: "Copperplate";
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -158,11 +180,13 @@ section {
     text-align: center;
     padding: 50px 20px;
     font-size: 1.1rem;
+    font-family: "Papyrus";
 }
 
 .footer p {
     margin-bottom: 15px;
     font-weight: 500;
+    font-family: "Papyrus";
     letter-spacing: 0.5px;
 }
 
@@ -177,6 +201,7 @@ section {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Papyrus";
     transition: color 0.3s, transform 0.3s;
 }
 
