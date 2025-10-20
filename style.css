@@ -15,14 +15,6 @@ body {
   transition: background 0.3s ease;
 }
 
-.nav-link {
-  color: #94a3b8;
-  transition: color 0.2s ease;
-}
-
-.nav-link:hover {
-  color: #60a5fa;
-}
 
 /* ===== HERO TEXT ===== */
 .gradient-text {
@@ -76,28 +68,6 @@ body {
   background: linear-gradient(90deg, #60a5fa, #9333ea); /* gradiente leggermente più acceso */
 }
 
-
-
-/* ===== HEADER MODERNO ===== */
-.hero-header {
-  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2rem 1rem;
-  text-align: center;
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.header-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
 /* ===== TITOLO PRINCIPALE ===== */
 .site-title {
   font-size: 3.5rem;
@@ -114,83 +84,6 @@ body {
   100% { filter: hue-rotate(360deg); }
 }
 
-
-/* ===== SECTIONS ===== */
-.section {
-  padding: 5rem 1rem;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(6px);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #60a5fa;
-  margin-bottom: 1rem;
-}
-
-.section-text {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #cbd5e1;
-}
-
-/* ===== PROJECT CARDS ===== */
-
-.projects-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;          /* Flexbox per layout orizzontale */
-  flex-wrap: wrap;        /* Le card vanno a capo se non ci stanno in una riga */
-  justify-content: center; /* Centra le card orizzontalmente */
-  gap: 2rem;              /* Spazio tra le card */
-}
-
-.project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  width: 300px;           /* larghezza fissa */
-  min-height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 25px rgba(59, 130, 246, 0.4);
-}
-
-.project-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #60a5fa;
-}
-
-.project-description {
-  font-size: 0.95rem;
-  color: #cbd5e1;
-  margin-bottom: 1rem;
-  flex-grow: 1;
-}
-
-.project-link {
-  font-weight: 500;
-  color: #9333ea;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.project-link:hover {
-  color: #60a5fa;
-  text-decoration: underline;
-}
 
 /* ===== FOOTER ===== */
 .footer {
