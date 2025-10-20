@@ -4,79 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calle 77 | Portfolio</title>
+
+    <!-- Tailwind -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css"
       rel="stylesheet"
     />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- File CSS personalizzato -->
+    <link rel="stylesheet" href="style.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
-  <body class="bg-gray-900 text-gray-100 font-sans flex flex-col min-h-screen">
-    <!-- HEADER -->
+
+  <body class="font-poppins bg-gray-900 text-gray-100 flex flex-col min-h-screen">
     <header class="p-6 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-white">Calle 77</h1>
       <nav class="space-x-4">
-        <a href="#about" class="hover:text-blue-400">Chi sono</a>
-        <a href="#projects" class="hover:text-blue-400">Progetti</a>
-        <a href="https://github.com/calle77" target="_blank" class="hover:text-blue-400">GitHub</a>
+        <a href="#about" class="nav-link">Chi sono</a>
+        <a href="#projects" class="nav-link">Progetti</a>
+        <a href="https://github.com/calle77" target="_blank" class="nav-link">GitHub</a>
       </nav>
     </header>
 
-    <!-- HERO SECTION -->
     <main class="flex flex-col justify-center items-center text-center flex-grow px-6">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        Ciao, sono <span class="text-blue-400">Calle 77</span> 👋
-      </h2>
-      <p class="text-lg text-gray-300 mb-4">
+      <h2 class="text-5xl font-bold mb-4 gradient-text">Ciao, sono Calle 77 👋</h2>
+      <p class="text-lg mb-4 text-subtle">
         <span id="typed-text"></span>
       </p>
       <a
         href="https://github.com/calle77"
         target="_blank"
-        class="mt-6 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition"
+        class="btn-primary"
       >
         Visita il mio GitHub →
       </a>
     </main>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="px-6 py-12 bg-gray-800 text-center">
-      <h3 class="text-3xl font-semibold mb-4 text-blue-400">Chi sono</h3>
-      <p class="max-w-2xl mx-auto text-gray-300">
+    <section id="about" class="section">
+      <h3 class="section-title">Chi sono</h3>
+      <p class="section-text">
         Sono uno studente di Informatica appassionato di sviluppo web, programmazione e tecnologia.  
         Su questo sito condivido i miei progetti e i miei esperimenti con codice e design.
       </p>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="px-6 py-12 text-center">
-      <h3 class="text-3xl font-semibold mb-4 text-blue-400">Progetti in evidenza</h3>
+    <section id="projects" class="section">
+      <h3 class="section-title">Progetti in evidenza</h3>
       <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Progetto 1</h4>
-          <p class="text-gray-400 mb-4">Un’applicazione web sperimentale sviluppata in JavaScript.</p>
-          <a href="#" class="text-blue-400 hover:underline">Guarda su GitHub →</a>
+        <div class="card">
+          <h4 class="card-title">Progetto 1</h4>
+          <p class="card-text">Un’applicazione web sperimentale sviluppata in JavaScript.</p>
+          <a href="#" class="card-link">Guarda su GitHub →</a>
         </div>
 
-        <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Progetto 2</h4>
-          <p class="text-gray-400 mb-4">Un piccolo tool Python per automatizzare operazioni quotidiane.</p>
-          <a href="#" class="text-blue-400 hover:underline">Guarda su GitHub →</a>
+        <div class="card">
+          <h4 class="card-title">Progetto 2</h4>
+          <p class="card-text">Un piccolo tool Python per automatizzare operazioni quotidiane.</p>
+          <a href="#" class="card-link">Guarda su GitHub →</a>
         </div>
 
-        <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
-          <h4 class="text-xl font-semibold mb-2">Progetto 3</h4>
-          <p class="text-gray-400 mb-4">Un sito statico realizzato con HTML, CSS e Tailwind.</p>
-          <a href="#" class="text-blue-400 hover:underline">Guarda su GitHub →</a>
+        <div class="card">
+          <h4 class="card-title">Progetto 3</h4>
+          <p class="card-text">Un sito statico realizzato con HTML, CSS e Tailwind.</p>
+          <a href="#" class="card-link">Guarda su GitHub →</a>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-950 text-center py-4 text-gray-500 text-sm">
+    <footer class="footer">
       © 2025 Calle 77 — Made with ❤️ using HTML & Tailwind
     </footer>
 
-    <!-- TYPED JS EFFECT -->
     <script>
       const typed = new Typed("#typed-text", {
         strings: [
