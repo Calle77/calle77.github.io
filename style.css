@@ -29,7 +29,7 @@ body {
   background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: hue 8s infinite linear;
+  animation: hue 10s infinite linear;
 }
 
 @keyframes hue {
@@ -114,42 +114,6 @@ body {
   100% { filter: hue-rotate(360deg); }
 }
 
-/* ===== NAV MENU ===== */
-.main-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.nav-item {
-  position: relative;
-  color: #cbd5e1;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 1.1rem;
-}
-
-.nav-item::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(90deg, #60a5fa, #9333ea);
-  transition: width 0.3s ease;
-  border-radius: 2px;
-}
-
-.nav-item:hover {
-  color: #60a5fa;
-}
-
-.nav-item:hover::after {
-  width: 100%;
-}
 
 /* ===== SECTIONS ===== */
 .section {
