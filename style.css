@@ -18,7 +18,7 @@ body {
 }
 
 header{
-    min-height: 30vh;
+    min-height: 25vh;
     background: transparent; /* sfondo identico al body */
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ section {
 
 /* =============================================================== HERO SECTION ========== */
 .hero {
-    min-height: 70vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,6 +93,23 @@ section {
     background: transparent; /* sfondo identico al body */
     color: white;
     text-align: center;
+}
+
+
+/*=============================================================== MEMOJI ==========*/
+.memoji-container {
+  display: flex;
+  justify-content: center;   /* centra orizzontalmente */
+  align-items: center;
+  margin: 0px 30px;            /* spazio sopra e sotto */
+}
+
+.memoji {
+  width: 200px;              /* dimensione regolabile */
+  height: auto;
+  border-radius: 50%;        /* effetto rotondo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ombra leggera */
+  background: white; 
 }
 
 /*=============================================================== MENU NAVIGAZIONE SITO ==========*/
