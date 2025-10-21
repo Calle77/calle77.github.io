@@ -23,9 +23,9 @@
     <section class="hero">
         <nav class="menu">
           <ul>
-            <li><button class ="btnmenu" onclick="showSection('about')">Chi sono</button></li>
-            <li><button class ="btnmenu" onclick="showSection('experience')">Esperienze</button></li>
-            <li><button class ="btnmenu" onclick="showSection('projects')">Progetti</button></li>
+            <li><button class ="btnmenu" onclick="showSection('about', this )">Chi sono</button></li>
+            <li><button class ="btnmenu" onclick="showSection('experience', this)">Esperienze</button></li>
+            <li><button class ="btnmenu" onclick="showSection('projects', this)">Progetti</button></li>
           </ul>
         </nav>
         <a href="https://github.com/Calle77" target="_blank" class="btn">Visita il mio GitHub</a>
@@ -73,8 +73,24 @@
         </div>
     </footer>
 
+
+    <!-- SCRIPT ANIMAZIONE TESTO -->
+    <!-- <script>
+        const texts = [
+            "uno sviluppatore in crescita 📈",
+            "un appassionato di coding 💻",
+            "uno studente di Informatica 👨🏻‍🎓"
+        ];
+        let i = 0;
+        const animatedText = document.getElementById("animated-text");
+        setInterval(() => {
+            animatedText.textContent = texts[i];
+            i = (i + 1) % texts.length; 
+        }, 1500);
+    </script> -->
+
     <script>
-        function showSection(id) {
+        function showSection(id, button) {
             const section = document.getElementById(id);
             section.scrollIntoView({ behavior: 'smooth' });
             button.blur();
