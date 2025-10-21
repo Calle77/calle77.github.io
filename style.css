@@ -146,7 +146,7 @@ section {
     transition: color 0.3s,transform 0.3s;
 }
 .btnmenu:hover{
-    color: #7666b8;
+    color: #ff7e5f;
     transform: translateY(-2px);
 }
 
@@ -312,7 +312,7 @@ section {
 }
 
 .footer .social-links a:hover {
-    color: #7666b8;
+    color: #ff7e5f;
     transform: translateY(-3px);
 }
 
