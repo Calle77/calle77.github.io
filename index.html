@@ -74,10 +74,26 @@
     </footer>
 
 
+    <!-- SCRIPT ANIMAZIONE TESTO -->
+    <!-- <script>
+        const texts = [
+            "uno sviluppatore in crescita 📈",
+            "un appassionato di coding 💻",
+            "uno studente di Informatica 👨🏻‍🎓"
+        ];
+        let i = 0;
+        const animatedText = document.getElementById("animated-text");
+        setInterval(() => {
+            animatedText.textContent = texts[i];
+            i = (i + 1) % texts.length; 
+        }, 1500);
+    </script> -->
+
     <script>
         function showSection(id) {
             const section = document.getElementById(id);
             section.scrollIntoView({ behavior: 'smooth' });
+            button.blur();
         }
 
         const texts = [
