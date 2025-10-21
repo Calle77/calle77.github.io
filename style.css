@@ -217,11 +217,11 @@ section {
     }
 
     #prefix{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #animated-text{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .project-cards {
@@ -230,7 +230,7 @@ section {
     }
 
     section {
-        padding: 80px 15px;
+        padding: 90px 15px;
     }
 }
 
