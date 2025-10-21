@@ -23,9 +23,9 @@
     <section class="hero">
         <nav class="menu">
           <ul>
-            <li><button class ="btnmenu" onclick="showSection('about', this )">Chi sono</button></li>
-            <li><button class ="btnmenu" onclick="showSection('experience', this)">Esperienze</button></li>
-            <li><button class ="btnmenu" onclick="showSection('projects', this)">Progetti</button></li>
+            <li><button class ="btnmenu" onclick= "showSection('about')" >Chi sono</button></li>
+            <li><button class ="btnmenu" onclick= "showSection('experience')" >Esperienze</button></li>
+            <li><button class ="btnmenu" onclick= "showSection('projects')">Progetti</button></li>
           </ul>
         </nav>
         <a href="https://github.com/Calle77" target="_blank" class="btn">Visita il mio GitHub</a>
@@ -90,11 +90,15 @@
     </script> -->
 
     <script>
-        function showSection(id, button) {
+        function showSection(id) {
             const section = document.getElementById(id);
             section.scrollIntoView({ behavior: 'smooth' });
-            button.blur();
         }
+
+        document.querySelectorAll('button').forEach(btn => {
+          btn.addEventListener('touchend', () => btn.blur());
+          btn.addEventListener('mouseup', () => btn.blur());
+        });
 
         const texts = [
             "uno sviluppatore in crescita 📈",
