@@ -85,7 +85,7 @@ section {
 
 /* =============================================================== HERO SECTION ========== */
 .hero {
-    min-height: 65vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,6 +329,18 @@ section {
 
     #animated-text{
         font-size: 1rem;
+    }
+
+    .menu{
+        transform: translateY(-30px);
+    }
+
+    .memoji-container{
+        transform: translateY(-30px);
+    }
+
+    .btn{
+        transform: translateY(-30px);
     }
 
     .project-cards {
