@@ -102,6 +102,7 @@ section {
   justify-content: center;   /* centra orizzontalmente */
   align-items: center;
   margin: 0px 30px;            /* spazio sopra e sotto */
+  transition: transform 0.3s;
 }
 
 .memoji {
@@ -115,6 +116,7 @@ section {
 /*=============================================================== MENU NAVIGAZIONE SITO ==========*/
 .menu{ 
     margin-top: 40px;
+    transition: transform 0.3s;
 }
 
 .menu ul{
